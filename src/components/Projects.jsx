@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: 'Coal Mining Security Protocol',
       description: 'A blockchain-based system designed to prevent coal theft during concession using tamper-proof ledgers.',
-      link: '#',
+      link: 'https://coal-mining-gma4gq9hl-shrilakshmikakatis-projects.vercel.app/',
       points: [
         'Implemented an Ethereum-based blockchain solution utilizing the Proof of Stake (PoS) protocol for immutable record keeping.',
         'Developed a responsive frontend interface using Next.js to provide real-time tracking and transparency.',
