@@ -102,11 +102,11 @@ const Contact = () => {
               shrilakshmik.work@gmail.com
             </a>
             <span className="text-text-secondary">|</span>
-            <a href="https://github.kr/shrilakshmikakati" target="_blank" rel="noreferrer" className="text-text-secondary hover:text-accent transition-colors">
+            <a href="https://github.com/shrilakshmikakati" target="_blank" rel="noreferrer" className="text-text-secondary hover:text-accent transition-colors">
               GitHub
             </a>
             <span className="text-text-secondary">|</span>
-            <a href="https://linkedin.com/in/shrilakshmi-kakati" target="_blank" rel="noreferrer" className="text-text-secondary hover:text-accent transition-colors">
+            <a href="https://www.linkedin.com/in/shrilakshmi-kakati-5435b8244/" target="_blank" rel="noreferrer" className="text-text-secondary hover:text-accent transition-colors">
               LinkedIn
             </a>
           </div>

@@ -3,15 +3,16 @@ import React from 'react';
 const Projects = () => {
   const projects = [
     {
-      title: 'Road Pothole Detection System',
-      description: 'A mobile application designed to detect road potholes in real-time, improving road safety and maintenance tracking.',
+      title: 'Coal Mining Security Protocol',
+      description: 'A blockchain-based system designed to prevent coal theft during concession using tamper-proof ledgers.',
+      link: '#',
       points: [
-        'Developed a mobile application using Kotlin, Flutter, and Gradle to detect road potholes in real-time.',
-        'Utilized gyroscope and accelerometer sensor to identify road anomalies based on predefined thresholds.',
-        'Implemented a Decision Tree algorithm to improve detection accuracy and reduce false positives.',
-        'Designed the system for real-time analysis and deployment readiness, ensuring scalability and practical usability.'
+        'Implemented an Ethereum-based blockchain solution utilizing the Proof of Stake (PoS) protocol for immutable record keeping.',
+        'Developed a responsive frontend interface using Next.js to provide real-time tracking and transparency.',
+        'Built the backend architecture with Express.js to handle secure API requests and business logic.',
+        'Integrated MongoDB for efficient and scalable database storage of off-chain metadata.'
       ],
-      tech: ['Kotlin', 'Flutter', 'Machine Learning', 'Sensors']
+      tech: ['Next.js', 'Express.js', 'MongoDB', 'Ethereum Blockchain', 'Solidity']
     }
   ];
 
@@ -21,7 +22,7 @@ const Projects = () => {
         <h2 className="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="glass-card p-8 group hover:-translate-y-2 transition-all duration-300">
+            <div key={index} className="glass-card p-8 group hover:-translate-y-2 transition-all duration-300 flex flex-col h-full">
               <h3 className="text-2xl font-bold mb-3 text-gradient">{project.title}</h3>
               <p className="text-text-secondary mb-6">{project.description}</p>
               
@@ -31,13 +32,29 @@ const Projects = () => {
                 ))}
               </ul>
 
-              <div className="flex flex-wrap gap-2 mt-auto">
+              <div className="flex flex-wrap gap-2 mb-6">
                 {project.tech.map((tech, i) => (
                   <span key={i} className="text-xs px-3 py-1 bg-white/5 border border-white/10 rounded-full">
                     {tech}
                   </span>
                 ))}
               </div>
+
+              {project.link && (
+                <div className="mt-auto pt-4 border-t border-white/5">
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="text-accent hover:text-white transition-colors text-sm font-semibold flex items-center gap-2 w-fit"
+                  >
+                    View Project 
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>
