@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-1: #1d182b;
+    --bg-2: #38214f;
+    --bg-3: #572359;
+    --bg-4: #ec5735;
+    --text-primary: #ffffff;
+    --text-secondary: #fcd3d3;
+    --accent: #ec5735;
+    --glass-bg: rgba(29, 24, 43, 0.4);
+    --glass-border: rgba(236, 87, 53, 0.2);
+  }
+
+  [data-theme='neon-mint'] {
+    --bg-1: #022c22;
+    --bg-2: #064e3b;
+    --bg-3: #047857;
+    --bg-4: #10b981;
+    --text-primary: #ffffff;
+    --text-secondary: #a7f3d0;
+    --accent: #10b981;
+    --glass-bg: rgba(0, 0, 0, 0.3);
+    --glass-border: rgba(16, 185, 129, 0.2);
+  }
+
+  [data-theme='deep-ocean'] {
+    --bg-1: #081229;
+    --bg-2: #142850;
+    --bg-3: #27496d;
+    --bg-4: #00909e;
+    --text-primary: #ffffff;
+    --text-secondary: #bfdbfe;
+    --accent: #00909e;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(0, 144, 158, 0.2);
+  }
+
+  body {
+    background-color: var(--bg-1);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-nav {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--bg-4), #ff9a9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme='neon-mint'] .text-gradient {
+  background: linear-gradient(to right, var(--bg-4), #34d399);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme='deep-ocean'] .text-gradient {
+  background: linear-gradient(to right, var(--bg-4), #93c5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Wavy Background Animations */
+.wave-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  background-color: var(--bg-1);
+  transition: background-color 0.5s ease;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  border-radius: 40%;
+  animation: spin 25s infinite linear;
+  transition: background-color 0.5s ease;
+}
+
+.wave:nth-child(1) {
+  background-color: var(--bg-2);
+  opacity: 0.8;
+  animation-duration: 35s;
+}
+
+.wave:nth-child(2) {
+  background-color: var(--bg-3);
+  opacity: 0.7;
+  top: -45%;
+  left: -45%;
+  animation-duration: 28s;
+  animation-direction: reverse;
+}
+
+.wave:nth-child(3) {
+  background-color: var(--bg-4);
+  opacity: 0.6;
+  top: -40%;
+  left: -40%;
+  animation-duration: 40s;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
