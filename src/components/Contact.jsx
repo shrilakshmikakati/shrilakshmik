@@ -44,7 +44,7 @@ const Contact = () => {
         <div className="glass-card p-8 md:p-12 text-center">
           <h2 className="text-4xl font-bold mb-4">Let's Connect</h2>
           <p className="text-text-secondary mb-8">
-            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll get back to you ;)
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6 max-w-xl mx-auto text-left">
