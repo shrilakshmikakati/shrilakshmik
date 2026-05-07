@@ -24,11 +24,11 @@ const Experience = () => {
       ]
     },
     {
-      title: 'Research Intern (Software Systems)',
+      title: 'Research Intern',
       company: 'IEEE Computer Society, Bangalore Section',
       date: 'Apr 2025 - Sep 2025',
       points: [
-        'Conducted system-level analysis of AI-generated code with focus on performance, efficiency, and sustainability.',
+        'Conducted system-level research on AI-generated code models with focus on performance, efficiency, and sustainability.',
         'Benchmarked tools such as ChatGPT, GitHub Copilot, and CodeWhisperer using structured evaluation metrics.'
       ]
     },
