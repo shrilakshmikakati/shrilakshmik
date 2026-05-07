@@ -10,6 +10,12 @@ const Skills = () => {
     { name: 'MongoDB', category: 'Database' },
     { name: 'Solidity', category: 'Web3' },
     { name: 'Rust', category: 'Web3/Systems' },
+    { name: 'GitHub', category: 'DevOps' },
+    { name: 'GitHub Actions', category: 'DevOps' },
+    { name: 'Jenkins', category: 'DevOps' },
+    { name: 'Docker', category: 'DevOps' },
+    { name: 'Kubernetes', category: 'DevOps' },
+    { name: 'Google Cloud Platform', category: 'Cloud' },
   ];
 
   return (

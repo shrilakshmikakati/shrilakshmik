@@ -24,12 +24,30 @@ const Experience = () => {
       ]
     },
     {
+      title: 'Research Intern (Software Systems)',
+      company: 'IEEE Computer Society, Bangalore Section',
+      date: 'Apr 2025 - Sep 2025',
+      points: [
+        'Conducted system-level analysis of AI-generated code with focus on performance, efficiency, and sustainability.',
+        'Benchmarked tools such as ChatGPT, GitHub Copilot, and CodeWhisperer using structured evaluation metrics.'
+      ]
+    },
+    {
       title: 'Blockchain Developer Intern',
       company: 'BlockseBlock',
       date: 'June 2025 - July 2025',
       points: [
         'As a backend developer, contributed to decentralized applications including Cross-Chain Asset Swap and Health Record dApps on the ICP blockchain, designing and integrating core backend workflows.',
         'Implemented and optimized smart contracts and canister logic using Rust, improving transaction integrity, state consistency, and reliability of on-chain operations.'
+      ]
+    },
+    {
+      title: 'Machine Learning Intern',
+      company: 'Unified Mentor Private Ltd',
+      date: 'Feb 2025 - March 2025',
+      points: [
+        'Gained hands-on experience in machine learning, enhancing understanding of key concepts, model development, and data analysis.',
+        'Worked on real-world projects to apply ML techniques effectively.'
       ]
     }
   ];
